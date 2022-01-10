@@ -1391,7 +1391,7 @@ swagger-cli@^4.0.4:
   dependencies:
     "@apidevtools/swagger-cli" "4.0.4"
 
-swagger-jsdoc@^6.1.0:
+swagger-jsdoc@^6.0.0:
   version "6.1.0"
   resolved "https://registry.yarnpkg.com/swagger-jsdoc/-/swagger-jsdoc-6.1.0.tgz#c2b86321f2c4dde8947b418fe8a4bc94431d5522"
   integrity sha512-xgep5M8Gq31MxpCbQLvJZpNqHfGPfI+sILCzujZbEXIQp2COtkZgoGASs0gacRs4xHmLDH+GuMGdorPITSG4tA==

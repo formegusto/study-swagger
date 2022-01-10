@@ -1,6 +1,7 @@
 import express from "express";
 import swaggerUi from "swagger-ui-express";
 import Docs from "./docs";
+import Routes from "./routes";
 
 class App {
   server: express.Application;
@@ -14,7 +15,14 @@ class App {
 
   SettingMW() {}
   Router() {
-    this.server.use("/api/docs", swaggerUi.serve, swaggerUi.setup(Docs));
+    this.server.use("/", Routes);
+    this.server.use(
+      "/api/docs",
+      swaggerUi.serve,
+      swaggerUi.setup(Docs, {
+        explorer: true,
+      })
+    );
   }
   Start() {
     const PORT = process.env.PORT || "80";
